@@ -1,0 +1,193 @@
+header{
+    width: 100vw;
+    background: var(--grey-700);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 10px;
+    color: var(--grey-100);
+}
+
+.containerForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+form.containerNewPost{
+    width: 100vw;
+    position: relative;
+    max-width: 80%;
+    height: 320px;
+    flex-shrink: 0;
+}
+form.containerNewPost > h2{
+    font-weight: bold;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+form.containerNewPost > img{
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+form.containerNewPost > span{
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    font-size: 0.875rem;
+}
+.containerNewPost__inputTitle{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    right: 20px;
+    border: solid 2px var(--grey-300);
+    width: 85%;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+.containerNewPost__inputText{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    width: 85%;
+    max-height: 40%;
+    border: solid 2px var(--grey-300);
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+}
+.containerNewPost > button{
+    position: absolute;
+    top: 280px;
+    right: 60px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--grey-100);
+    background-color: var(--brand-1);
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+.containerNewPost > button:hover{
+    color: var(--grey-100);
+    background-color: var(--brand-2);
+}
+
+article{
+    width: 85vw;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.imgSuggest{
+    width: 40px;
+    margin: 10px;
+}
+.nameSuggest{
+    font-size: 1.25rem;
+    line-height: 150%;
+    position: absolute;
+    top: 12px;
+    left: 60px;
+}
+.skill{
+    position: absolute;
+    top: 35px;
+}
+.follow{
+    position: absolute;
+    top: 60px;
+    font-weight: bold;
+    padding: 6px;
+    border: solid 1px var(--grey-300);
+}
+.follow:hover{
+    background: var(--brand-2);
+    color: #ffffff;
+    padding: 6px 16px;
+    border: none;
+}
+
+.containerPosts > h2{
+    margin-bottom: 1.25rem;
+}
+.imgUserPost{
+    width: 60px;
+    margin: 15px;
+}
+.userNamePost{
+    position: absolute;
+    top: 1.875rem;
+    left: 5.625rem;
+}
+.liPost > span{
+    position: absolute;
+    top: 3.4375rem;
+}
+.subject{
+    margin: 1rem;
+    line-height: 150%;
+}
+.liPost > p{
+    margin: 1rem;
+    line-height: 150%;
+}
+.liPost > button{
+    border: none;
+    margin: 1rem;
+    padding: 5px 10px;
+    background: var(--grey-700);
+    color: var(--grey-100);
+    cursor: pointer;
+}
+.liPost > button:hover{
+    background: var(--brand-2);
+}
+.like{
+    position: absolute;
+    bottom: 22px;
+    cursor: pointer;
+}
+
+@media(min-width: 1024px){
+    .containerForm{
+        width: 50vw;
+    }
+    .containerSuggestion{
+        max-width: 50vw;
+        position: absolute;
+        top: 120px;
+        left: 42%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        margin: 1.5rem;
+    }
+    .containerSuggestion__listSuggestion{
+        max-width: 50vw;
+        display: flex;
+        flex-direction: column;
+        max-height: 300px;
+    }
+}
+
+
+
+

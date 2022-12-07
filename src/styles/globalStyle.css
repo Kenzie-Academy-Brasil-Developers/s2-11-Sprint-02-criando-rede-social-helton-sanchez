@@ -1,0 +1,87 @@
+:root{
+    --brand-1:#4263EB;
+    --brand-2:#364FC7;
+
+    --grey-900:#0A0C0D;
+    --grey-700: #212529;
+    --grey-500: #495057;
+    --grey-300: #868E96;
+    --grey-200: #DEE2E6;
+    --grey-100: #F8F9FA;
+    --grey-opacity-1: grey-opacity-1;
+    --white-fixed: #ffffff;
+    --like-color: #D7443E;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+span{
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+header{
+width: 100vw;
+display: flex;
+}
+
+input , button{
+    border-radius: 4px;
+}
+
+.containerForm{
+    width: 100vw;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.containerSuggestion__listSuggestion{
+    display: flex;
+    width: 95vw;
+    overflow-x: scroll;
+}
+.liSuggest{
+    width: 250px;
+    min-height: 100px;
+    gap: 1rem;
+    margin: 1rem 0px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.containerPosts{
+    display: flex;
+    flex-direction: column;
+}
+.liPost{
+    width: 90vw;
+    min-width: 250px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+
